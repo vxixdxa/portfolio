@@ -107,20 +107,21 @@ export default async function ProjectPage({ params }: Props) {
       {/* Hero Image */}
       <FadeIn delay={200}>
         <div
-          className="mt-12 aspect-video rounded-sm overflow-hidden relative"
+          className="mt-12 rounded-sm overflow-hidden relative"
           style={{ backgroundColor: `${project.color}15` }}
         >
           {project.thumbnail ? (
             <Image
               src={project.thumbnail}
               alt={project.title}
-              fill
-              className="object-cover"
+              width={1200}
+              height={675}
+              className="w-full h-auto"
               sizes="(max-width: 768px) 100vw, 1200px"
               priority
             />
           ) : (
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="aspect-video flex items-center justify-center">
               <div className="text-center">
                 <span
                   className="font-heading text-heading-1 font-bold"
