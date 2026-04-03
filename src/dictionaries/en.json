@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "work": "Work",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "label": "Product Designer | UI/UX Designer",
+    "heading": "Complex systems, simple experiences.",
+    "description": "Good design isn't about making things pretty — it's about making the right things happen naturally.",
+    "stat1Value": "5+",
+    "stat1Label": "Projects",
+    "stat2Value": "4+",
+    "stat2Label": "Industries",
+    "stat3Value": "60+",
+    "stat3Label": "Components Built"
+  },
+  "projects": {
+    "label": "Selected Work",
+    "viewCaseStudy": "View Case Study",
+    "allProjects": "All Projects",
+    "previous": "Previous",
+    "next": "Next",
+    "role": "Role",
+    "duration": "Duration",
+    "tools": "Tools",
+    "heroPlaceholder": "Hero Image Placeholder",
+    "comingSoon": "Full case study coming soon."
+  },
+  "about": {
+    "label": "About",
+    "heading": "Finding the shortest path between business logic and user experience.",
+    "bio1": "I'm Vida, a Product Designer with years of experience leading multiple projects across diverse industries — healthcare, esports, fintech, and enterprise communication. What I do best is step into an unfamiliar domain, quickly understand its business logic, and turn complex systems into experiences users instantly get.",
+    "bio2": "I believe good design isn't about making things pretty — it's about making the right things happen naturally.",
+    "principlesLabel": "Design Principles",
+    "principle1Title": "Data-Driven Decisions",
+    "principle1Desc": "Using research and analytics to inform design choices, not relying on intuition alone.",
+    "principle2Title": "Systematic Thinking",
+    "principle2Desc": "Building scalable Design Systems with reusable components and consistent tokens.",
+    "principle3Title": "Cross-Functional Collaboration",
+    "principle3Desc": "Working closely with PMs, engineers, and stakeholders to ensure designs are fully realized.",
+    "skillsLabel": "Skills & Tools",
+    "skillCatDesign": "Design",
+    "skillCatTools": "Tools",
+    "skillCatMethods": "Methods",
+    "contactLabel": "Get in Touch",
+    "contactDesc": "Currently open for collaboration opportunities. Let's talk about your next product."
+  },
+  "footer": {
+    "role": "Product Designer | UI/UX Designer",
+    "copyright": "© {year} Vida C. All rights reserved."
+  }
+}

@@ -1,0 +1,41 @@
+## The Challenge
+
+Building a communication app on the Web that delivers a native app-like experience requires achieving absolute balance between "complex feature depth (group broadcasts, labels, unread management)" and "minimal visual feel." As a high-frequency product, any excess visual noise or operational friction gets amplified infinitely.
+
+### Core Pain Points
+
+- Web versions typically lack the smooth transitions of native apps, creating a "clunky web feeling"
+- Multi-level contact classification (new friends, groups, labels) led to overly deep navigation paths
+- Needed to convey enterprise-grade security trust while avoiding visual fatigue during extended use
+
+---
+
+## Design Strategy
+
+### 1. Fluid 3-Column Architecture
+
+Designed a **"Global Navigation + Conversation List + Chat Main View"** structure for desktop. When switching to Mobile PWA, this seamlessly collapses into a single-column view while maintaining consistent icon semantics and interaction habits — achieving perfect cross-platform experience.
+
+### 2. Trust-Driven Design System
+
+Selected deep **indigo blue (#003399)** as the primary color, paired with generous negative space and warm light gray backgrounds. Eliminated overused gradients and excessive shadows, using **extreme minimalism** to convey a stable, secure, professional product character.
+
+### 3. Frictionless UX
+
+Completely replaced system default emoji icons with clean, semantically precise SVG icons (Lucide). Added subtle hover state and active state background feedback for conversation lists, combined with Sticky Headers to ensure users always have clear context during long conversations.
+
+---
+
+## Key Design Decision
+
+For typography details, I made a critical decision: **rejecting the overused system default fonts** in favor of a modern sans-serif font with strong character yet high readability, strictly controlling line-height between 1.5-1.6.
+
+For message bubbles, carefully calculated padding and border-radius create a "breathing sensation." These subtle yet critical detail accumulations completely eliminate the web feeling, giving the product a bespoke, premium atmosphere.
+
+---
+
+## Impact
+
+- Successfully broke the stereotype that "web communication apps are unusable" through PWA and refined visual language
+- Structured 3-column design significantly improved high-frequency users' group switching and message management efficiency
+- Premium minimal UI helped the organization easily gain employee trust and high engagement during rollout

@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "work": "作品",
+    "about": "關於",
+    "contact": "聯絡"
+  },
+  "hero": {
+    "label": "產品設計師 | UI/UX 設計師",
+    "heading": "複雜的系統，簡單的體驗。",
+    "description": "好的設計不是讓東西變漂亮，而是讓對的事情自然發生。",
+    "stat1Value": "5+",
+    "stat1Label": "專案",
+    "stat2Value": "4+",
+    "stat2Label": "產業領域",
+    "stat3Value": "60+",
+    "stat3Label": "元件設計"
+  },
+  "projects": {
+    "label": "精選作品",
+    "viewCaseStudy": "查看案例研究",
+    "allProjects": "所有專案",
+    "previous": "上一個",
+    "next": "下一個",
+    "role": "角色",
+    "duration": "期間",
+    "tools": "工具",
+    "heroPlaceholder": "主視覺圖片佔位",
+    "comingSoon": "完整案例研究即將推出。"
+  },
+  "about": {
+    "label": "關於",
+    "heading": "在商業邏輯與用戶體驗之間，找到最短的路徑。",
+    "bio1": "我是 Vida，一位擁有多年產品設計經驗的設計師，主導過多項專案，橫跨醫美、電競、金融科技到企業通訊等不同產業。我最擅長的事情是走進一個陌生的領域，快速理解它的商業邏輯，然後把複雜的系統轉化為用戶能秒懂的體驗。",
+    "bio2": "我相信好的設計不是讓東西變漂亮，而是讓對的事情自然發生。",
+    "principlesLabel": "設計原則",
+    "principle1Title": "數據驅動決策",
+    "principle1Desc": "以研究和分析為基礎做出設計決策，而非僅靠直覺猜測。",
+    "principle2Title": "系統化思考",
+    "principle2Desc": "建立可擴展的 Design System，包含可複用元件與一致的設計規範。",
+    "principle3Title": "跨部門協作",
+    "principle3Desc": "與 PM、工程師和利害關係人緊密合作，確保設計在開發中被完整實現。",
+    "skillsLabel": "技能與工具",
+    "skillCatDesign": "設計",
+    "skillCatTools": "工具",
+    "skillCatMethods": "方法論",
+    "contactLabel": "聯絡我",
+    "contactDesc": "目前開放合作機會，歡迎聊聊你的下一個產品計畫。"
+  },
+  "footer": {
+    "role": "產品設計師 | UI/UX 設計師",
+    "copyright": "© {year} Vida C. 保留所有權利。"
+  }
+}

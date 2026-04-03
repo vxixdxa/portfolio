@@ -1,0 +1,43 @@
+## The Challenge
+
+A high-traffic sports live streaming platform needed to achieve perfect balance between "high-density real-time information (scores, odds, chat interactions)" and "low-latency video streaming." The biggest challenge: designing role-specific workspaces (streamers, assistants, regular members) without disrupting the core viewing experience, while maintaining ultra-smooth interfaces across desktop and mobile.
+
+### Core Pain Points
+
+- Real-time interactions (gift effects, scrolling chat) could obstruct the game view
+- Streamers and assistants needed to handle multiple backend controls during live broadcasts with low error tolerance
+- Web version needed to handle high-frequency DOM updates (chat message flooding) without dropping frames
+
+---
+
+## Design Strategy
+
+Combining frontend performance considerations with premium experience design:
+
+### 1. Modular Bento Grid Architecture
+
+Breaking from traditional stacked layouts, I adopted a Bento Grid-style modular block system. Video player, real-time data panels, and chat rooms operate independently, ensuring the core viewing area maintains optimal visual focus regardless of window resizing.
+
+### 2. Role-Oriented Dark Mode Workspace
+
+Considering streamers spend extended hours staring at screens, I introduced a professional dark mode based on **slate-900**, with high-contrast neon gradient accents for critical data update feedback. This reduces visual fatigue while creating an immersive, tech-forward sports entertainment atmosphere.
+
+### 3. Adaptive Interaction Layers
+
+Non-essential UI automatically fades during key match moments to keep focus on the action. Gift animations and chat use lightweight overlays that never block the video feed.
+
+---
+
+## Key Design Decision
+
+For the mobile layout, I boldly abandoned the common "semi-transparent floating chat room" approach and instead adopted an **extreme Bottom-Sheet interaction model**.
+
+The video maintains 16:9 full-width at top, with all interactions contained in a swipeable bottom drawer. Combined with highly readable sans-serif typography, this ensures users can enjoy a native app-like experience even during single-handed mobile operation.
+
+---
+
+## Impact
+
+- Modular design reduced Cumulative Layout Shift (CLS) to near zero, significantly improving frontend rendering performance
+- Clear role-based permission interfaces notably improved the livestream team's operational efficiency
+- Immersive dark theme combined with smooth micro-interactions drove substantial growth in member engagement
