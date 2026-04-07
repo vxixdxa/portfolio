@@ -57,7 +57,7 @@ export default async function AboutPage({ params }: Props) {
       <FadeIn delay={200}>
         <div className="mt-8 max-w-prose space-y-6 text-body text-secondary">
           <p>{d.bio1}</p>
-          <p>{d.bio2}</p>
+          {d.bio2 && <p>{d.bio2}</p>}
           <p>{d.bio3}</p>
         </div>
       </FadeIn>
