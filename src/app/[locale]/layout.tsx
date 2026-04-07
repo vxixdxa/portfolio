@@ -25,7 +25,10 @@ export async function generateMetadata({
       template: "%s — Vida Cheng",
     },
     description,
-    metadataBase: new URL("https://vidacheng.vercel.app"),
+    metadataBase: new URL("https://vidac.vercel.app"),
+    icons: {
+      icon: "/favicon.svg",
+    },
     openGraph: {
       title,
       description,
