@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const skillItems = {
   design: ["UI Design", "UX Research", "Wireframing", "Prototyping", "Design System", "Responsive Design"],
   tools: ["Figma", "Principle", "Protopie", "Webflow", "Storybook"],
+  ai: ["ChatGPT", "Claude", "Midjourney", "Cursor", "V0"],
   methods: ["User Interview", "Usability Testing", "Competitive Analysis", "Journey Mapping", "A/B Testing"],
 };
 
@@ -38,6 +39,7 @@ export default async function AboutPage({ params }: Props) {
   const skills = [
     { category: d.skillCatDesign, items: skillItems.design },
     { category: d.skillCatTools, items: skillItems.tools },
+    { category: d.skillCatAI, items: skillItems.ai },
     { category: d.skillCatMethods, items: skillItems.methods },
   ];
 

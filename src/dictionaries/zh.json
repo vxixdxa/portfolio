@@ -35,7 +35,7 @@
     "bio3": "我相信好的設計不是讓東西變漂亮，而是讓對的事情自然發生。",
     "principlesLabel": "設計原則",
     "principle1Title": "數據驅動決策",
-    "principle1Desc": "以研究和分析為基礎做出設計決策，而非僅靠直覺猜測。",
+    "principle1Desc": "善用 AI 輔助進行研究和分析，以數據為基礎做出設計決策，而非僅靠直覺猜測。",
     "principle2Title": "系統化思考",
     "principle2Desc": "建立可擴展的 Design System，包含可複用元件與一致的設計規範。",
     "principle3Title": "跨部門協作",
@@ -43,6 +43,7 @@
     "skillsLabel": "技能與工具",
     "skillCatDesign": "設計",
     "skillCatTools": "工具",
+    "skillCatAI": "AI 工具",
     "skillCatMethods": "方法論",
     "contactLabel": "聯絡我",
     "contactDesc": "目前開放合作機會，歡迎聊聊你的下一個產品計畫。"

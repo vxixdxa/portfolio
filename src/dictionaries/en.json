@@ -35,7 +35,7 @@
     "bio3": "I believe good design isn't about making things pretty — it's about making the right things happen naturally.",
     "principlesLabel": "Design Principles",
     "principle1Title": "Data-Driven Decisions",
-    "principle1Desc": "Using research and analytics to inform design choices, not relying on intuition alone.",
+    "principle1Desc": "Leveraging AI-assisted research and analytics to inform design choices, not relying on intuition alone.",
     "principle2Title": "Systematic Thinking",
     "principle2Desc": "Building scalable Design Systems with reusable components and consistent tokens.",
     "principle3Title": "Cross-Functional Collaboration",
@@ -43,6 +43,7 @@
     "skillsLabel": "Skills & Tools",
     "skillCatDesign": "Design",
     "skillCatTools": "Tools",
+    "skillCatAI": "AI Tools",
     "skillCatMethods": "Methods",
     "contactLabel": "Get in Touch",
     "contactDesc": "Currently open for collaboration opportunities. Let's talk about your next product."
