@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const skillItems = {
   design: ["UI Design", "UX Research", "Wireframing", "Prototyping", "Design System", "Responsive Design"],
   tools: ["Figma", "Principle", "Protopie", "Webflow", "Storybook"],
-  ai: ["ChatGPT", "Claude", "Midjourney", "Cursor", "V0"],
+  ai: ["ChatGPT", "Claude", "Midjourney", "Cursor", "Pencil"],
   methods: ["User Interview", "Usability Testing", "Competitive Analysis", "Journey Mapping", "A/B Testing"],
 };
 
