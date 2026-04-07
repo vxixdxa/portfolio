@@ -30,8 +30,9 @@
   "about": {
     "label": "About",
     "heading": "Finding the shortest path between business logic and user experience.",
-    "bio1": "I'm Vida, a Product Designer with years of experience leading multiple projects across diverse industries — healthcare, esports, fintech, and enterprise communication. What I do best is step into an unfamiliar domain, quickly understand its business logic, and turn complex systems into experiences users instantly get.",
-    "bio2": "I believe good design isn't about making things pretty — it's about making the right things happen naturally.",
+    "bio1": "Hello, I'm Vida! With years of product design experience, I've led multiple projects across healthcare, esports, fintech, and enterprise communication.",
+    "bio2": "I excel at stepping into unfamiliar domains, quickly understanding the business logic, and finding the shortest path to great user experience.",
+    "bio3": "I believe good design isn't about making things pretty — it's about making the right things happen naturally.",
     "principlesLabel": "Design Principles",
     "principle1Title": "Data-Driven Decisions",
     "principle1Desc": "Using research and analytics to inform design choices, not relying on intuition alone.",
