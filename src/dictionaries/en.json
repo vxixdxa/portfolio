@@ -51,5 +51,22 @@
   "footer": {
     "role": "Product Designer | UI/UX Designer",
     "copyright": "© {year} Vida C. All rights reserved."
+  },
+  "common": {
+    "loading": "Loading…"
+  },
+  "notFound": {
+    "title": "Oops, this page got lost.",
+    "subtitle": "But you're not — let's get you back.",
+    "goHome": "Take me home"
+  },
+  "mascot": {
+    "label": "Friendly site mascot — click to say hi",
+    "greetings": [
+      "Hi there!",
+      "Thanks for stopping by!",
+      "Let's talk design.",
+      "Hope you find something cool."
+    ]
   }
 }

@@ -14,9 +14,40 @@ const config: Config = {
         primary: "#18181B",
         secondary: "#3F3F46",
         accent: "#1500FF",
+        "accent-soft": "#E8F5E9",
         muted: "#E8ECF0",
         "muted-fg": "#475569",
         border: "#E4E4E7",
+      },
+      keyframes: {
+        breathe: {
+          "0%, 100%": { transform: "translateY(0) scale(1)" },
+          "50%": { transform: "translateY(-3px) scale(1.015)" },
+        },
+        "bounce-dot": {
+          "0%, 80%, 100%": { transform: "translateY(0)", opacity: "0.4" },
+          "40%": { transform: "translateY(-8px)", opacity: "1" },
+        },
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
+        },
+        "pop-bounce": {
+          "0%, 100%": { transform: "scale(1)" },
+          "30%": { transform: "scale(1.15)" },
+          "60%": { transform: "scale(0.95)" },
+        },
+        "fade-in-up": {
+          "0%": { opacity: "0", transform: "translateY(4px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        breathe: "breathe 4s ease-in-out infinite",
+        "bounce-dot": "bounce-dot 1.4s ease-in-out infinite",
+        wiggle: "wiggle 2s ease-in-out infinite",
+        "pop-bounce": "pop-bounce 500ms ease-out",
+        "fade-in-up": "fade-in-up 200ms ease-out",
       },
       fontFamily: {
         heading: ["var(--font-archivo)", "sans-serif"],

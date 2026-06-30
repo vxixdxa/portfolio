@@ -7,6 +7,7 @@ import { getProjectContent } from "@/lib/mdx";
 import { FadeIn } from "@/components/FadeIn";
 import { SectionLabel } from "@/components/SectionLabel";
 import { getDictionary, locales, type Locale } from "@/lib/i18n";
+import { siteName, ogLocale, absoluteUrl } from "@/lib/seo";
 import Link from "next/link";
 
 interface Props {
@@ -24,14 +25,40 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const project = projects.find((p) => p.slug === params.slug);
   if (!project) return {};
 
+  const title = project.title;
+  const description = project.description[locale];
+  const path = `/projects/${params.slug}`;
+
   return {
-    title: project.title,
-    description: project.description[locale],
+    title,
+    description,
     alternates: {
+      canonical: absoluteUrl(`/${locale}${path}`),
       languages: {
-        en: `/en/projects/${params.slug}`,
-        "zh-Hant": `/zh/projects/${params.slug}`,
+        en: `/en${path}`,
+        "zh-Hant": `/zh${path}`,
+        "x-default": `/en${path}`,
       },
+    },
+    openGraph: {
+      title: `${title} — ${siteName}`,
+      description,
+      url: absoluteUrl(`/${locale}${path}`),
+      siteName,
+      locale: ogLocale[locale],
+      type: "article",
+      images: [
+        {
+          url: project.thumbnail ?? "/og.png",
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} — ${siteName}`,
+      description,
+      images: [project.thumbnail ?? "/og.png"],
     },
   };
 }
@@ -72,8 +99,53 @@ export default async function ProjectPage({ params }: Props) {
   const prevProject = currentIndex > 0 ? projects[currentIndex - 1] : null;
   const nextProject = currentIndex < projects.length - 1 ? projects[currentIndex + 1] : null;
 
+  const projectUrl = absoluteUrl(`/${locale}/projects/${project.slug}`);
+  const projectJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: project.title,
+    headline: project.subtitle[locale],
+    description: project.description[locale],
+    url: projectUrl,
+    inLanguage: locale === "zh" ? "zh-Hant" : "en",
+    image: project.thumbnail ? absoluteUrl(project.thumbnail) : undefined,
+    creator: {
+      "@type": "Person",
+      name: siteName,
+      jobTitle: project.role[locale],
+    },
+    keywords: project.tools.join(", "),
+    genre: project.category,
+  };
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: siteName,
+        item: absoluteUrl(`/${locale}`),
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: project.title,
+        item: projectUrl,
+      },
+    ],
+  };
+
   return (
     <article className="container-main pt-32 md:pt-40 pb-section">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(projectJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       {/* Back link */}
       <FadeIn>
         <Link

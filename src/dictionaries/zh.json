@@ -51,5 +51,22 @@
   "footer": {
     "role": "產品設計師 | UI/UX 設計師",
     "copyright": "© {year} Vida C. 保留所有權利。"
+  },
+  "common": {
+    "loading": "載入中…"
+  },
+  "notFound": {
+    "title": "哎呀，這一頁走丟了。",
+    "subtitle": "但你沒有 — 來，帶你回家。",
+    "goHome": "回首頁"
+  },
+  "mascot": {
+    "label": "網站小夥伴，點我打招呼",
+    "greetings": [
+      "哈囉！",
+      "謝謝你來看看！",
+      "來聊聊設計吧。",
+      "希望你找到喜歡的東西。"
+    ]
   }
 }

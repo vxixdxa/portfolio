@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { FadeIn } from "@/components/FadeIn";
 import { SectionLabel } from "@/components/SectionLabel";
 import { getDictionary, type Locale } from "@/lib/i18n";
+import { siteName, ogLocale, absoluteUrl } from "@/lib/seo";
 
 interface Props {
   params: { locale: string };
@@ -10,10 +11,34 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const locale = params.locale as Locale;
   const dict = await getDictionary(locale);
+  const title = dict.about.label;
+  const description = dict.about.heading;
+
   return {
-    title: dict.about.label,
+    title,
+    description,
     alternates: {
-      languages: { en: "/en/about", "zh-Hant": "/zh/about" },
+      canonical: absoluteUrl(`/${locale}/about`),
+      languages: {
+        en: "/en/about",
+        "zh-Hant": "/zh/about",
+        "x-default": "/en/about",
+      },
+    },
+    openGraph: {
+      title: `${title} — ${siteName}`,
+      description,
+      url: absoluteUrl(`/${locale}/about`),
+      siteName,
+      locale: ogLocale[locale],
+      type: "profile",
+      images: [{ url: "/og.png", width: 1200, height: 1200, alt: siteName }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} — ${siteName}`,
+      description,
+      images: ["/og.png"],
     },
   };
 }
