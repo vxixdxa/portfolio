@@ -78,8 +78,8 @@ export const projects: Project[] = [
     },
     category: "Web Design",
     description: {
-      en: "Redesigned the online brand presence for a premium medical aesthetics center, enhancing brand trust and online consultation conversion through warm visual language and optimized information architecture.",
-      zh: "為高端醫美中心重塑線上品牌形象，透過溫暖的視覺語言與優化的資訊架構，成功提升品牌信任感與線上預約轉換率。",
+      en: "Reimagined the website experience for a medical aesthetics brand — building brand trust through clear information architecture, a warm yet professional visual language, and well-defined booking paths.",
+      zh: "為醫美品牌重新規劃網站體驗，透過清楚的資訊架構、溫暖專業的視覺語言與明確的預約路徑，建立品牌信任感。",
     },
     role: {
       en: "UI/UX Designer",
@@ -106,8 +106,8 @@ export const projects: Project[] = [
     },
     category: "Dashboard / Design System",
     description: {
-      en: "Built a comprehensive back-office management system spanning 7+ departments for an esports company, establishing a Design System with 60+ reusable components that significantly improved cross-team design efficiency.",
-      zh: "為電競遊戲公司打造涵蓋 7+ 部門的後台管理系統，建立了 60+ 可複用元件的 Design System，大幅提升跨團隊設計效率。",
+      en: "Redesigned the back-office management system for an esports gaming company — integrating cross-department workflows, role-oriented dashboards, and a scalable design system to improve the consistency and maintainability of the backoffice product.",
+      zh: "重新設計電競遊戲公司的後台管理系統，整合跨部門操作流程、角色導向 Dashboard 與可擴充的設計系統，提升後台產品的一致性與可維護性。",
     },
     role: {
       en: "Lead UI/UX Designer",
@@ -133,8 +133,8 @@ export const projects: Project[] = [
     },
     category: "Mobile App",
     description: {
-      en: "Redesigned a lottery platform's betting flow from 6 steps to 3, built a unified Design Library for 10+ game types, and improved first-time bet success rate to 95% through user behavior analysis.",
-      zh: "重新設計彩票平台的下注流程，從 6 步縮減至 3 步，為 10+ 種彩種建立統一的 Design Library，透過用戶行為分析將首次下注成功率提升至 95%。",
+      en: "Redesigned the core flows and information architecture of a lottery entertainment app — turning a high information-density, transaction-heavy interface into a clearer, faster, and more understandable mobile experience.",
+      zh: "重新設計彩票娛樂 App 的核心操作流程與資訊架構，將高資訊密度的交易型介面轉化為更清楚、快速且容易理解的行動端體驗。",
     },
     role: {
       en: "UI/UX Designer",

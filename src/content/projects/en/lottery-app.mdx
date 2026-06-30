@@ -1,41 +1,62 @@
+## Overview
+
+Redesigned the core flows and information architecture of a lottery entertainment app — turning a high information-density, transaction-heavy interface into a clearer, faster, and more understandable mobile experience.
+
+---
+
+## Scope of Work
+
+Mobile UX · Information Architecture · User Flow · Core Task Flow · UI Design · Design Library · Interaction Design · Design Handoff
+
+---
+
 ## The Challenge
 
-iNUM lottery platform was facing user attrition — players reported the existing interface was cumbersome and the betting process too lengthy, while competitors had already launched more modernized experiences. This was a design challenge requiring balance between "feature complexity" and "operational simplicity."
+Lottery App is a mobile product with multiple game types and high-frequency operational needs. The original interface carried a large amount of information and features, but its flows were cumbersome — users easily felt burdened when finding games, understanding rules, and completing core tasks.
+
+The core challenge of this project was this: how to reduce mobile operational complexity while keeping the full feature set, and let both new and experienced users complete tasks effectively.
 
 ### Core Pain Points
 
-- The betting flow required 6 steps to complete a single bet
-- Chaotic information hierarchy across multiple lottery types made it hard for players to find their preferred games
-- Extremely high information density on pages created steep learning curves for new players
+- The core flows were long, requiring users to switch between multiple pages and confirmation states.
+- The information hierarchy across game types was unclear, making it hard for users to quickly find their frequently used items.
+- High information density on pages meant new users needed more time to understand the interface and how to operate it.
+- Different game types lacked consistency in visuals and interaction patterns, undermining the overall product experience.
+
+---
+
+## Design Process
+
+I was responsible for restructuring the mobile UX flows, optimizing the information architecture, designing the core operational interfaces, establishing the visual system, and planning the Design Library. Throughout the process, I focused on lowering the cost of repeated actions, improving information legibility, and building a consistent experience across game types.
 
 ---
 
 ## Design Strategy
 
-### 1. User Behavior Analysis
+### Reorganizing User Tasks & Information Architecture
 
-I first analyzed existing users' heatmaps and usage paths, discovering that 70% of users only played 2-3 fixed lottery types. This insight directly influenced my information architecture — splitting "Favorites" and "Explore" into two independent entry points.
+I first analyzed users' main behaviors in the product, splitting "frequently used items" and "exploring other items" into different levels. For experienced users, this means returning to common actions faster; for new users, clear categorization helps them understand the product's content.
 
-### 2. Betting Flow Simplification
+This information architecture supports both high-frequency use and newcomer exploration, without cramming everything into a single entry point.
 
-Redesigned the betting process from 6 steps down to 3: **Select Numbers → Confirm Amount → Submit**. Introduced a "Quick Pick" feature enabling repeat bets with a single tap.
+### Simplifying the Core Flows
 
-### 3. Visual System Establishment
+I redesigned the core flows to cut unnecessary page jumps and repeated confirmations, letting users complete their main tasks more directly. For highly repetitive actions, I also designed quick selections and default states to reduce the burden of reconfiguring everything each time.
 
-Built a comprehensive Design Library unifying the visual language across 10+ lottery types, enabling players to quickly identify game categories through colors and icons alone.
+The point of this strategy wasn't simply to remove screens, but to make every step better fit the user's operational intent.
 
----
+### Building a Consistent Visual & Component System
 
-## Key Design Decision
+Since the product includes multiple game types, I built a consistent Design Library that unifies colors, icons, buttons, cards, status cues, and operational components. Users can quickly identify content types through consistent visual rules, and keep a familiar feel when moving between different games.
 
-For the number selection interface, I faced a core trade-off: **"Numeric Keypad Style"** vs. **"Ball Selection Style."**
+### Lowering the Learning Cost for New Users
 
-I ultimately chose the numeric keypad approach, because user testing revealed that players' mental models were closer to "calculator input" rather than "lottery machine ball picking." The keypad layout improved operation speed by **40%**.
+For information-dense pages, I re-prioritized the information, presenting primary actions, supporting information, and rule explanations in layers. Users can complete the core task first and then view advanced information as needed, avoiding being overwhelmed by too much content from the start.
 
 ---
 
 ## Impact
 
-- Bet completion rate significantly improved (steps reduced from 6 to 3)
-- First-time player successful bet rate improved dramatically
-- Design Library reduced design time for subsequent new lottery type launches by 60%
+- Reorganized the core flows so users can complete their main tasks more directly.
+- Optimized the information architecture across game types, improving the clarity of finding and identifying content.
+- Established a consistent Design Library, letting future features and new game types extend in a more stable way.

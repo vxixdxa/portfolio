@@ -1,43 +1,65 @@
+## Overview
+
+Replanned the back-office management system for an esports gaming company — integrating cross-department workflows, data monitoring, management tools, and a design system to improve the backoffice product's consistency, usability, and efficiency of future expansion.
+
+---
+
+## Scope of Work
+
+UX Architecture · User Role Analysis · Dashboard Design · Information Architecture · UI Design · Design System · Component Library · Design Guideline · Design Handoff
+
+---
+
 ## The Challenge
 
-Inplay Matrix's esports gaming backoffice is a complex system serving multiple departments simultaneously — business analysts, operations staff, and customer service teams. The existing system had scattered functionality and inconsistent interaction logic, leading to low team efficiency.
+IM ESports Backoffice is a back-office management system used by multiple internal departments, with users spanning business analysis, operations, customer service, and management. As features accumulated over time, the original system developed inconsistent interaction logic, scattered page information, and non-unified visual standards — forcing users to spend considerable learning effort to find data and complete tasks.
+
+The core challenge of this project was this: how to reorganize a complex backoffice architecture without disrupting existing workflows, and establish a design system that can be maintained and extended over the long term.
 
 ### Core Pain Points
 
-- 7+ departments using different operational logic, creating extremely high learning costs
-- Conflicting demands between real-time data monitoring and page load speeds
-- No unified design language — every new feature felt like "patching" the system
+- Workflows and page logic differed across departments, so users easily got confused when operating across functions.
+- The backoffice carried a large volume of data and management features with unclear information priority, hurting the efficiency of finding information and making decisions.
+- The lack of a unified design language meant interface quality and interaction patterns were inconsistent whenever new features were added.
+- The legacy system had long been in daily use by the team, so a redesign had to balance migration cost against established usage habits.
+
+---
+
+## Design Process
+
+I was responsible for the backoffice product's UX architecture, role-and-task mapping, dashboard interface design, component system, design specifications, and handoff documentation. Throughout the process, I worked with product team members to map out the workflows of different roles, organizing recurring interaction patterns into reusable design components.
 
 ---
 
 ## Design Strategy
 
-### 1. Stakeholder Interviews & Role Modeling
+### Mapping User Roles & Task Flows
 
-Collaborated deeply with BAs and PMs to define 5 core user roles. Built User Journey Maps for each role to identify "breakpoints" and "redundant actions" in operational workflows.
+I started from the usage scenarios of different departments, mapping out each role's main tasks, operational paths, and common breakpoints in the backoffice. Through role and flow mapping, I could more clearly judge which information should take priority and which operations needed to be simplified or unified.
 
-### 2. Modular Design System
+This made the design about solving problems within real workflows, not just repackaging the interface.
 
-Built an extensible Component Library and Design Guideline with **60+ UI components** and a Token System (color, spacing, typography specifications) to ensure visual and interaction consistency across all functional modules.
+### Building a Role-Oriented Dashboard Architecture
 
-### 3. Progressive Migration Strategy
+Backoffice users don't need to see all the data — they need to quickly find the information relevant to their own tasks. So I shifted the dashboard from a single overview-style interface to an information architecture closer to each role's tasks.
 
-Considering the team's dependence on the legacy system, I designed a "progressive redesign" roadmap — unifying visual style first, then gradually optimizing workflows to avoid the adaptation costs of a one-time overhaul.
+After logging in, different roles first see the metrics, statuses, and entry points relevant to their work, reducing the burden of searching through large volumes of information.
 
----
+### Building a Scalable Design System
 
-## Key Design Decision
+To solve interface inconsistency and the difficulty of maintaining future features, I built a componentized UI architecture and design specifications — including tables, filters, status labels, action buttons, forms, notification messages, and common backoffice components.
 
-For the data dashboard design, I faced a critical choice: **"Global Overview"** vs. **"Role-Customized"** Dashboard.
+Through unified components and rules, different functional modules can maintain consistent interaction patterns, while also lowering the communication cost of subsequent design and development.
 
-I chose the latter — each role sees an information layout optimized for their specific tasks upon login, rather than a single massive dashboard containing all data.
+### Adopting a Progressive Redesign Strategy
 
-This decision reduced the average time to "find needed information" from **30 seconds to 5 seconds**.
+Because the backoffice is a core daily tool for internal teams, I avoided overhauling all flows at once and instead adopted a progressive rollout. I unified the visuals and base components first, then gradually adjusted key flows and information architecture, letting users adapt to the new interface on a familiar foundation.
 
 ---
 
 ## Impact
 
-- Component Library with 60+ reusable components, improving design efficiency by 50%
-- New employee training time reduced from 2 weeks to 3 days
-- System received highly positive internal team reviews
+- Reorganized the backoffice information architecture so different roles can more clearly find content relevant to their own tasks.
+- Established a consistent design language and component system, improving the efficiency of future feature extension and cross-team collaboration.
+- Lowered users' adaptation cost through a progressive redesign, letting the new interface roll into daily workflows more smoothly.
+- Turned long-accumulated backoffice features into a clearer, more stable, and maintainable product architecture.
