@@ -10,7 +10,7 @@ export const siteName = "Vida Cheng";
  * In Search Console choose the "HTML tag" method and paste ONLY the value of
  * its content="..." attribute here, then redeploy. Leave empty to omit the tag.
  */
-export const googleSiteVerification = "";
+export const googleSiteVerification = "axsxhuCq6RLa2K5DoWtjCk5y1a8Sb3AExEOtqDBKuO8";
 
 /**
  * Keyword-oriented meta description for the home page. Kept separate from the
