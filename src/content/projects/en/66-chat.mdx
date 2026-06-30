@@ -1,46 +1,61 @@
+## Overview
+
+Designed the multi-role permissions, contact management, group communication, and business upgrade experience for an enterprise communication platform — lowering the operational cost of complex enterprise communication scenarios through clear information architecture and a scalable UI system.
+
+---
+
 ## The Challenge
 
-66 Chat is an enterprise communication platform serving diverse user roles — from frontline employees to department managers and system administrators — while offering customizable business upgrade paths for different organizational needs. The core challenge was balancing "complex feature depth (multi-role permissions, group broadcasts, customizable modules)" with "a minimal, intuitive experience" across desktop and mobile.
+66 Chat is an enterprise communication platform that needs to support different roles — frontline employees, managers, and system administrators — while also offering business modules that let organizations expand functionality to fit their own needs.
+
+The core challenge of this project was this: how to keep a multi-role, multi-permission, multi-module product architecture clear, and prevent users from getting confused as they move between daily communication, team management, and system settings.
 
 ### Core Pain Points
 
-- Multiple user roles (employee, manager, admin) required distinct interfaces and permissions, but fragmented experiences across roles led to confusion and repeated support tickets
-- Businesses needed customizable upgrade options (advanced group management, analytics dashboards, branded themes) but the upgrade flow was buried and unclear — only 8% of trial users discovered premium features
-- Multi-level contact classification (new friends, groups, labels) created navigation paths 4+ levels deep
-- The platform needed to convey enterprise-grade security trust while remaining comfortable for 8+ hours of daily use
+- Different roles hold different permissions and tasks, but the original structure made it easy for users to lose track of which actions they could actually perform.
+- Contacts, groups, and labels were classified across many levels, so users spent more time finding people or managing lists.
+- Business features and upgrade plans weren't woven naturally into the usage context, making it hard for users to grasp the value of advanced features.
+- The platform needed to convey the stability and trust of an enterprise-grade product while staying comfortable for long hours of daily use.
+
+---
+
+## My Role & Responsibilities
+
+I led product experience design, information architecture, role-and-permission logic, interface flows, UI visual design, and design system planning. Throughout the process, I focused on translating complex enterprise communication logic into a clear, understandable, and scalable user experience.
 
 ---
 
 ## Design Strategy
 
-### 1. Multi-Role Permission Architecture
+### Building a Role-Oriented Interface Structure
 
-Designed a role-based UI system where each user type sees a tailored interface. Employees get a streamlined chat-focused view, managers access team oversight and broadcast tools, and admins control organization-wide settings and user management. A unified navigation framework ensures seamless role switching without losing context.
+I reorganized user roles and feature permissions so that different roles see content suited to their tasks within the same product framework. Regular employees focus on chat and contacts; managers can go further to manage teams and group communication; admins handle organization settings, permissions, and advanced features.
 
-The key was **progressive disclosure** — rather than hiding features behind role gates, the interface adapts subtly. A manager sees the same conversation list as an employee, plus a team analytics tab. An admin sees both, plus a settings panel. The cognitive load stays low because the foundation is familiar at every level.
+This avoids building entirely separate systems for each role, and means users don't have to relearn the whole interface when their role changes.
 
-### 2. Business Customization & Upgrade Module
+### Reducing Cognitive Load with Progressive Disclosure
 
-Created a progressive upgrade experience that surfaces premium features naturally within daily workflows. For example: when a manager creates a group and hits the 50-member limit, instead of a generic error, they see a preview of the expanded group with 200+ slots, sample analytics charts, and a one-click upgrade path — all within the same modal.
+Rather than exposing every feature at once, I revealed them gradually based on the user's role, context, and needs. Core features stay consistent while advanced ones appear when needed, keeping the interface simple while preserving the product's depth.
 
-The modular design allows businesses to select only what they need: advanced group management, custom branding, API integrations, or analytics dashboards. Each module shows a **live preview with sample data** before purchase, so decision-makers can evaluate real value rather than reading feature descriptions.
+This lets new users get started quickly, while advanced users can complete more complex tasks within a familiar structure.
 
+### Restructuring Contact & Group Management
 
----
+For contacts, groups, and labels, I rethought the classification model and entry points so users can more intuitively find people, manage lists, and carry out group communication.
 
-## Key Design Decision
+The focus wasn't on adding more categories, but on making the classification logic closer to everyday communication scenarios — reducing the effort of finding, filtering, and managing contacts.
 
-For the multi-role system, I faced a critical choice: **"Single app with role-based views"** vs. **"Separate apps per role."**
+### Weaving Business Upgrades into Context
 
-I chose the single-app approach with adaptive UI — the navigation structure stays consistent, but content panels, action buttons, and feature access dynamically adjust based on the user's role. This decision reduced onboarding friction dramatically: users promoted from employee to manager didn't need to learn a new interface. Role-specific features are progressively revealed through contextual permission layers rather than hidden behind separate entry points.
+I shifted business upgrades from a plain feature-restriction page to contextual feature guidance. When users hit an advanced need during real use, the interface surfaces that feature's value, use case, and preview state, helping users understand what problem upgrading would solve.
 
-For the business upgrade module, I designed a **"Try before you buy"** pattern — premium features show interactive preview states with sample data, so decision-makers can evaluate value before committing. This replaced the traditional feature-gated lockout screens that had been causing 73% drop-off at the upgrade page.
+This makes upgrading not just a payment gateway, but part of the product experience.
 
 ---
 
 ## Impact
 
-- Multi-role permission system reduced admin configuration time by 60% compared to the previous flat-permission model
-- Contextual upgrade touchpoints lifted business plan conversion rate from 8% to 24% — a 3x improvement over the traditional pricing page
-- Flattened navigation structure reduced average path depth from 4+ levels to 2, cutting task completion time by 40%
-- Premium minimal UI helped organizations achieve 89% employee adoption rate within the first month of rollout
+- Made multi-role permissions and enterprise communication flows clearer, reducing confusion around role switching and feature use.
+- Reorganized the contacts, groups, and labels structure to make everyday communication and list management more intuitive.
+- Through contextual guidance, made the value of business features easier to understand.
+- Built a scalable UI architecture that supports future extension of roles, permissions, and business modules.

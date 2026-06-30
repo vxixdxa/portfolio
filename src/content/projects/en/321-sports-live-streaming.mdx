@@ -1,43 +1,49 @@
+## Overview
+
+Designed a cross-device viewing experience for a sports live streaming platform — integrating live broadcast, real-time chat, scores, and interactive features while keeping a clear visual hierarchy and smooth operation in high information-density contexts.
+
+---
+
 ## The Challenge
 
-A high-traffic sports live streaming platform needed to achieve perfect balance between "high-density real-time information (scores, odds, chat interactions)" and "low-latency video streaming." The biggest challenge: designing role-specific workspaces (streamers, assistants, regular members) without disrupting the core viewing experience, while maintaining ultra-smooth interfaces across desktop and mobile.
+A sports live streaming platform has to support video viewing, real-time interaction, match information, and backend management tools all at once. While watching a match, users need to quickly take in the score, interaction messages, and live content; meanwhile, streamers and assistants need to manage the chat room, control interactive content, and handle real-time situations throughout the broadcast.
+
+The core challenge of this project was this: how to integrate a large volume of information and operational features into a single interface without disrupting the viewing experience — while keeping that experience clear, stable, and easy to operate on both desktop and mobile.
 
 ### Core Pain Points
 
-- Real-time interactions (gift effects, scrolling chat) could obstruct the game view
-- Streamers and assistants needed to handle multiple backend controls during live broadcasts with low error tolerance
-- Web version needed to handle high-frequency DOM updates (chat message flooding) without dropping frames
+- Real-time chat, gifting interactions, and match information can easily scatter the viewer's focus and undermine the immersion of watching the game.
+- Streamers and assistants need to handle management, interaction, and control tasks simultaneously during a broadcast, so the interface must offer a clear operational hierarchy and fault-tolerant design.
+- The desktop version needs to integrate video, chat, match information, and interaction modules without becoming visually overcrowded.
+- Mobile screens have limited space, calling for a more effective way to switch between watching and interacting.
+
+---
+
+## My Role & Responsibilities
+
+I led the overall UI/UX design — covering use-case mapping, information architecture, desktop and mobile interface design, interaction flows, component planning, and design handoff. Throughout the process, I paid particular attention to the information hierarchy of real-time interaction interfaces, the differences in role-based permissions, and consistency across devices.
 
 ---
 
 ## Design Strategy
 
-Combining frontend performance considerations with premium experience design:
+### A Modular Information Architecture
 
-### 1. Modular Bento Grid Architecture
+I separated the live video, chat room, match information, and interaction features into independent modules, avoiding stacking all content within a single visual area. On desktop, a modular layout keeps the video as the primary visual focus while letting users quickly check the chat room and match status.
 
-Breaking from traditional stacked layouts, I adopted a Bento Grid-style modular block system. Video player, real-time data panels, and chat rooms operate independently, ensuring the core viewing area maintains optimal visual focus regardless of window resizing.
+This keeps the different information blocks independent yet working in concert on the same page, lowering the cost of switching between watching and looking things up.
 
-### 2. Live Room Interaction Design
+### Distinguishing Streamer, Assistant & Member Needs
 
-Designed an interaction system balancing streamer control with audience engagement — streamers get message pinning, muting, and moderation tools; viewers participate through real-time reactions, gifting, and leaderboards.
+Each role has different tasks within the live room, so I designed corresponding permissions and interface layers for each one. Regular members focus on watching, chatting, and interacting; streamers and assistants need faster access to pinning messages, muting, managing interactions, and keeping the broadcast in order.
 
-### 3. Adaptive Interaction Layers
-
-Non-essential UI automatically fades during key match moments to keep focus on the action. Gift animations and chat use lightweight overlays that never block the video feed.
-
----
-
-## Key Design Decision
-
-For the mobile layout, I boldly abandoned the common "semi-transparent floating chat room" approach and instead adopted an **extreme Bottom-Sheet interaction model**.
-
-The video maintains 16:9 full-width at top, with all interactions contained in a swipeable bottom drawer. Combined with highly readable sans-serif typography, this ensures users can enjoy a native app-like experience even during single-handed mobile operation.
+Through role-oriented design, every user only sees the controls relevant to their own tasks, avoiding unnecessary feature clutter.
 
 ---
 
 ## Impact
 
-- Modular design reduced Cumulative Layout Shift (CLS) to near zero, significantly improving frontend rendering performance
-- Clear role-based permission interfaces notably improved the livestream team's operational efficiency
-- Immersive dark theme combined with smooth micro-interactions drove substantial growth in member engagement
+- Established a clearer information hierarchy for the live room, letting viewing, interaction, and match information coexist within a single interface.
+- Through role-oriented design, streamers, assistants, and regular members can each quickly find the features they need for their tasks.
+- The mobile interaction flow better fits the viewing context, reducing the disruption that chat and interactive content cause to the live feed.
+- The modular architecture improved consistency for later feature expansion and cross-device design.

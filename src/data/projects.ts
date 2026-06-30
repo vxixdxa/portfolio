@@ -24,8 +24,8 @@ export const projects: Project[] = [
     },
     category: "Web + Mobile App",
     description: {
-      en: "Designed an immersive viewing experience for a high-traffic sports streaming platform, achieving perfect balance between real-time interaction and low-latency video, supporting multi-role permissions across devices.",
-      zh: "設計高流量體育直播平台的沉浸式觀看體驗，在即時互動與低延遲影音之間取得完美平衡，支援多角色權限與跨裝置使用。",
+      en: "Designed a cross-device viewing experience for a sports live streaming platform — integrating live broadcast, real-time chat, scores, and interactive features while keeping a clear visual hierarchy and smooth operation in high information-density contexts.",
+      zh: "為體育直播平台設計跨裝置觀看體驗，整合賽事直播、即時聊天、比分資訊與互動功能，在高資訊密度的情境下維持清楚的視覺層級與流暢的操作體驗。",
     },
     role: {
       en: "UI/UX Designer",
@@ -51,8 +51,8 @@ export const projects: Project[] = [
     },
     category: "Web App",
     description: {
-      en: "Designed an enterprise communication platform with multi-role permission systems and customizable business upgrade features, delivering a seamless cross-platform experience through trust-driven design.",
-      zh: "設計具備多重角色權限系統與商務客製化升級功能的企業通訊平台，以信任驅動的設計系統打造流暢的跨平台體驗。",
+      en: "Planned the multi-role permissions, contact management, and business upgrade experience for an enterprise communication platform — turning complex organizational communication flows into a clear, scalable product architecture.",
+      zh: "規劃企業通訊平台的多角色權限、聯絡人管理與商務升級體驗，將複雜的組織溝通流程轉化為清楚、可擴充的產品架構。",
     },
     role: {
       en: "UI/UX Designer",
