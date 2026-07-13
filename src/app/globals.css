@@ -63,21 +63,4 @@
   a, button, [role="button"], input[type="submit"] {
     cursor: pointer;
   }
-
-  /* Custom cursor: hide native cursor only when CustomCursor is mounted
-     and only on devices with a fine pointer + hover capability. */
-  @media (hover: hover) and (pointer: fine) {
-    body.has-custom-cursor,
-    body.has-custom-cursor a,
-    body.has-custom-cursor button,
-    body.has-custom-cursor [role="button"],
-    body.has-custom-cursor input[type="submit"] {
-      cursor: none;
-    }
-    body.has-custom-cursor input,
-    body.has-custom-cursor textarea,
-    body.has-custom-cursor [contenteditable="true"] {
-      cursor: text;
-    }
-  }
 }

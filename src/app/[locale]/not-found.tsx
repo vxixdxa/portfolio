@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { MascotSVG } from "@/components/mascot/MascotSVG";
 import { getDictionary, type Locale, locales } from "@/lib/i18n";
 
 export default function NotFound() {
@@ -19,7 +18,14 @@ export default function NotFound() {
 
       <section className="container-main pt-32 md:pt-40 pb-section text-center flex flex-col items-center">
         <div className="animate-wiggle origin-bottom mb-8">
-          <MascotSVG variant="lost" size={128} />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/mascot.png"
+            alt=""
+            aria-hidden="true"
+            draggable={false}
+            className="block h-32 w-auto select-none"
+          />
         </div>
 
         <h1 className="font-heading text-display text-primary">404</h1>

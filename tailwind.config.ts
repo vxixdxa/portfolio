@@ -41,6 +41,11 @@ const config: Config = {
           "0%": { opacity: "0", transform: "translateY(4px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        "heart-float": {
+          "0%": { opacity: "0", transform: "translateY(0) scale(0.5)" },
+          "25%": { opacity: "1" },
+          "100%": { opacity: "0", transform: "translateY(-34px) scale(1)" },
+        },
       },
       animation: {
         breathe: "breathe 4s ease-in-out infinite",
@@ -48,6 +53,8 @@ const config: Config = {
         wiggle: "wiggle 2s ease-in-out infinite",
         "pop-bounce": "pop-bounce 500ms ease-out",
         "fade-in-up": "fade-in-up 200ms ease-out",
+        "heart-float": "heart-float 900ms ease-out forwards",
+        "wiggle-once": "wiggle 0.5s ease-in-out 2",
       },
       fontFamily: {
         heading: ["var(--font-archivo)", "sans-serif"],

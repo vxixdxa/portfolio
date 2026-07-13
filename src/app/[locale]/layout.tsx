@@ -3,7 +3,6 @@ import { Archivo, Space_Grotesk } from "next/font/google";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Mascot } from "@/components/mascot/Mascot";
-import { CustomCursor } from "@/components/cursor/CustomCursor";
 import { locales, getDictionary, type Locale } from "@/lib/i18n";
 import {
   siteName,
@@ -172,7 +171,6 @@ export default async function LocaleLayout({
         <main>{children}</main>
         <Footer locale={locale} dict={dict.footer} />
         <Mascot dict={dict.mascot} />
-        <CustomCursor />
       </body>
     </html>
   );

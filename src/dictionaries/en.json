@@ -62,11 +62,33 @@
   },
   "mascot": {
     "label": "Friendly site mascot — click to say hi",
-    "greetings": [
-      "Hi there!",
-      "Thanks for stopping by!",
-      "Let's talk design.",
-      "Hope you find something cool."
+    "hint": "Psst — click me 👋",
+    "greetings": {
+      "home": [
+        "Hey, welcome in!",
+        "This is Vida's portfolio ✦",
+        "Take your time — ping me anytime."
+      ],
+      "about": [
+        "Want to know Vida better?",
+        "My design philosophy lives here 👀"
+      ],
+      "project": [
+        "I'm pretty proud of this one 👀",
+        "Scroll down for the full process.",
+        "Peek at the design decisions behind it."
+      ],
+      "general": [
+        "Hi there!",
+        "Thanks for stopping by ✦",
+        "Let's talk design.",
+        "Hope you find something cool."
+      ]
+    },
+    "easterEgg": [
+      "You really kept clicking 😆",
+      "Okay okay, I know I'm cute.",
+      "Keep going and I'll blush."
     ]
   }
 }
